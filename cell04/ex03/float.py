@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 def main(): 
     x = float(input("Give me a number: "))
     if x.is_integer():
