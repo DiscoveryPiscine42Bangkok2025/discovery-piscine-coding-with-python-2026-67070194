@@ -4,7 +4,8 @@ def checkmate(board):
 
     for row in board:
         if len(row) != size:
-            return "Error"
+            print("Error")
+            return
 
     # หาตำแหน่ง King
     king_pos = None
@@ -15,7 +16,7 @@ def checkmate(board):
                 break
 
     if not king_pos:
-        print("Fail")
+        print("Error")
         return
 
     x, y = king_pos
